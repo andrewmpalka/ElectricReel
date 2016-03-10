@@ -15,6 +15,14 @@
 		7B8C7E751C90DEA100D40D47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B8C7E731C90DEA100D40D47 /* LaunchScreen.storyboard */; };
 		7B8C7E801C90DEA100D40D47 /* ElectricReelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8C7E7F1C90DEA100D40D47 /* ElectricReelTests.swift */; };
 		7B8C7E8B1C90DEA100D40D47 /* ElectricReelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8C7E8A1C90DEA100D40D47 /* ElectricReelUITests.swift */; };
+		7B8C7E991C90DEE600D40D47 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8C7E981C90DEE600D40D47 /* ThirdViewController.swift */; };
+		7B8C7E9B1C92074F00D40D47 /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8C7E9A1C92074F00D40D47 /* FourthViewController.swift */; };
+		7B8C7E9D1C92083000D40D47 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B8C7E9C1C92083000D40D47 /* MapKit.framework */; };
+		7B8C7E9F1C92083700D40D47 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B8C7E9E1C92083700D40D47 /* CoreLocation.framework */; };
+		7B8C7EA11C92089400D40D47 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B8C7EA01C92089400D40D47 /* Twitter.framework */; };
+		7B8C7EA51C9215B200D40D47 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8C7EA41C9215B200D40D47 /* RootViewController.swift */; };
+		7B8C7EA71C9215C000D40D47 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8C7EA61C9215C000D40D47 /* SignInViewController.swift */; };
+		7B8C7EA91C9215D900D40D47 /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8C7EA81C9215D900D40D47 /* DemoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +57,14 @@
 		7B8C7E861C90DEA100D40D47 /* ElectricReelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ElectricReelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B8C7E8A1C90DEA100D40D47 /* ElectricReelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectricReelUITests.swift; sourceTree = "<group>"; };
 		7B8C7E8C1C90DEA100D40D47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B8C7E981C90DEE600D40D47 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		7B8C7E9A1C92074F00D40D47 /* FourthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
+		7B8C7E9C1C92083000D40D47 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		7B8C7E9E1C92083700D40D47 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		7B8C7EA01C92089400D40D47 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
+		7B8C7EA41C9215B200D40D47 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		7B8C7EA61C9215C000D40D47 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		7B8C7EA81C9215D900D40D47 /* DemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +72,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B8C7EA11C92089400D40D47 /* Twitter.framework in Frameworks */,
+				7B8C7E9F1C92083700D40D47 /* CoreLocation.framework in Frameworks */,
+				7B8C7E9D1C92083000D40D47 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +98,9 @@
 		7B8C7E5C1C90DEA100D40D47 = {
 			isa = PBXGroup;
 			children = (
+				7B8C7EA01C92089400D40D47 /* Twitter.framework */,
+				7B8C7E9E1C92083700D40D47 /* CoreLocation.framework */,
+				7B8C7E9C1C92083000D40D47 /* MapKit.framework */,
 				7B8C7E671C90DEA100D40D47 /* ElectricReel */,
 				7B8C7E7E1C90DEA100D40D47 /* ElectricReelTests */,
 				7B8C7E891C90DEA100D40D47 /* ElectricReelUITests */,
@@ -99,9 +121,12 @@
 		7B8C7E671C90DEA100D40D47 /* ElectricReel */ = {
 			isa = PBXGroup;
 			children = (
+				7B8C7EAA1C9215E500D40D47 /* Log In Process */,
 				7B8C7E681C90DEA100D40D47 /* AppDelegate.swift */,
 				7B8C7E6A1C90DEA100D40D47 /* FirstViewController.swift */,
 				7B8C7E6C1C90DEA100D40D47 /* SecondViewController.swift */,
+				7B8C7E981C90DEE600D40D47 /* ThirdViewController.swift */,
+				7B8C7E9A1C92074F00D40D47 /* FourthViewController.swift */,
 				7B8C7E6E1C90DEA100D40D47 /* Main.storyboard */,
 				7B8C7E711C90DEA100D40D47 /* Assets.xcassets */,
 				7B8C7E731C90DEA100D40D47 /* LaunchScreen.storyboard */,
@@ -126,6 +151,16 @@
 				7B8C7E8C1C90DEA100D40D47 /* Info.plist */,
 			);
 			path = ElectricReelUITests;
+			sourceTree = "<group>";
+		};
+		7B8C7EAA1C9215E500D40D47 /* Log In Process */ = {
+			isa = PBXGroup;
+			children = (
+				7B8C7EA41C9215B200D40D47 /* RootViewController.swift */,
+				7B8C7EA61C9215C000D40D47 /* SignInViewController.swift */,
+				7B8C7EA81C9215D900D40D47 /* DemoViewController.swift */,
+			);
+			name = "Log In Process";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,9 +294,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B8C7EA71C9215C000D40D47 /* SignInViewController.swift in Sources */,
 				7B8C7E6D1C90DEA100D40D47 /* SecondViewController.swift in Sources */,
 				7B8C7E691C90DEA100D40D47 /* AppDelegate.swift in Sources */,
+				7B8C7EA51C9215B200D40D47 /* RootViewController.swift in Sources */,
+				7B8C7E991C90DEE600D40D47 /* ThirdViewController.swift in Sources */,
 				7B8C7E6B1C90DEA100D40D47 /* FirstViewController.swift in Sources */,
+				7B8C7E9B1C92074F00D40D47 /* FourthViewController.swift in Sources */,
+				7B8C7EA91C9215D900D40D47 /* DemoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
