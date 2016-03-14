@@ -33,6 +33,11 @@
 		7B8C7EC91C972F6E00D40D47 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8C7EC81C972F6E00D40D47 /* ComplicationController.swift */; };
 		7B8C7ECB1C972F6E00D40D47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B8C7ECA1C972F6E00D40D47 /* Assets.xcassets */; };
 		7B8C7ECF1C972F6E00D40D47 /* WatchApp.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 7B8C7EAD1C972F6D00D40D47 /* WatchApp.app */; };
+		7B8C7EDE1C97461F00D40D47 /* Mapbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B8C7EDD1C97461F00D40D47 /* Mapbox.framework */; };
+		7B8C7EDF1C97461F00D40D47 /* Mapbox.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7B8C7EDD1C97461F00D40D47 /* Mapbox.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7B8C7EE31C97574100D40D47 /* BandAidViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B8C7EE21C97574100D40D47 /* BandAidViewController.m */; };
+		7B8C7EE51C97672000D40D47 /* mapbox-raster-v8.json in Resources */ = {isa = PBXBuildFile; fileRef = 7B8C7EE41C97672000D40D47 /* mapbox-raster-v8.json */; };
+		7B8C7EE71C976C8700D40D47 /* cilshngh0009ta7ltfu351fyr.json in Resources */ = {isa = PBXBuildFile; fileRef = 7B8C7EE61C976C8700D40D47 /* cilshngh0009ta7ltfu351fyr.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +94,17 @@
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7B8C7EDC1C97442200D40D47 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7B8C7EDF1C97461F00D40D47 /* Mapbox.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -127,6 +143,12 @@
 		7B8C7EC81C972F6E00D40D47 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
 		7B8C7ECA1C972F6E00D40D47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7B8C7ECC1C972F6E00D40D47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B8C7EDD1C97461F00D40D47 /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Mapbox.framework; sourceTree = "<group>"; };
+		7B8C7EE01C97574000D40D47 /* ElectricReel-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ElectricReel-Bridging-Header.h"; sourceTree = "<group>"; };
+		7B8C7EE11C97574100D40D47 /* BandAidViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BandAidViewController.h; sourceTree = "<group>"; };
+		7B8C7EE21C97574100D40D47 /* BandAidViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BandAidViewController.m; sourceTree = "<group>"; };
+		7B8C7EE41C97672000D40D47 /* mapbox-raster-v8.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "mapbox-raster-v8.json"; sourceTree = "<group>"; };
+		7B8C7EE61C976C8700D40D47 /* cilshngh0009ta7ltfu351fyr.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cilshngh0009ta7ltfu351fyr.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +159,7 @@
 				7B8C7EA11C92089400D40D47 /* Twitter.framework in Frameworks */,
 				7B8C7E9F1C92083700D40D47 /* CoreLocation.framework in Frameworks */,
 				7B8C7E9D1C92083000D40D47 /* MapKit.framework in Frameworks */,
+				7B8C7EDE1C97461F00D40D47 /* Mapbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,6 +190,9 @@
 		7B8C7E5C1C90DEA100D40D47 = {
 			isa = PBXGroup;
 			children = (
+				7B8C7EE11C97574100D40D47 /* BandAidViewController.h */,
+				7B8C7EE21C97574100D40D47 /* BandAidViewController.m */,
+				7B8C7EDD1C97461F00D40D47 /* Mapbox.framework */,
 				7B8C7EA01C92089400D40D47 /* Twitter.framework */,
 				7B8C7E9E1C92083700D40D47 /* CoreLocation.framework */,
 				7B8C7E9C1C92083000D40D47 /* MapKit.framework */,
@@ -176,6 +202,7 @@
 				7B8C7EAE1C972F6D00D40D47 /* WatchApp */,
 				7B8C7EBD1C972F6D00D40D47 /* WatchApp Extension */,
 				7B8C7E661C90DEA100D40D47 /* Products */,
+				7B8C7EE01C97574000D40D47 /* ElectricReel-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -202,6 +229,8 @@
 				7B8C7E9A1C92074F00D40D47 /* FourthViewController.swift */,
 				7B8C7E6E1C90DEA100D40D47 /* Main.storyboard */,
 				7B8C7E711C90DEA100D40D47 /* Assets.xcassets */,
+				7B8C7EE61C976C8700D40D47 /* cilshngh0009ta7ltfu351fyr.json */,
+				7B8C7EE41C97672000D40D47 /* mapbox-raster-v8.json */,
 				7B8C7E731C90DEA100D40D47 /* LaunchScreen.storyboard */,
 				7B8C7E761C90DEA100D40D47 /* Info.plist */,
 			);
@@ -280,6 +309,7 @@
 				7B8C7E621C90DEA100D40D47 /* Frameworks */,
 				7B8C7E631C90DEA100D40D47 /* Resources */,
 				7B8C7ED71C972F6E00D40D47 /* Embed Watch Content */,
+				7B8C7EDC1C97442200D40D47 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -418,7 +448,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B8C7E751C90DEA100D40D47 /* LaunchScreen.storyboard in Resources */,
+				7B8C7EE51C97672000D40D47 /* mapbox-raster-v8.json in Resources */,
 				7B8C7E721C90DEA100D40D47 /* Assets.xcassets in Resources */,
+				7B8C7EE71C976C8700D40D47 /* cilshngh0009ta7ltfu351fyr.json in Resources */,
 				7B8C7E701C90DEA100D40D47 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -467,6 +499,7 @@
 				7B8C7EA51C9215B200D40D47 /* RootViewController.swift in Sources */,
 				7B8C7E991C90DEE600D40D47 /* ThirdViewController.swift in Sources */,
 				7B8C7E6B1C90DEA100D40D47 /* FirstViewController.swift in Sources */,
+				7B8C7EE31C97574100D40D47 /* BandAidViewController.m in Sources */,
 				7B8C7E9B1C92074F00D40D47 /* FourthViewController.swift in Sources */,
 				7B8C7EA91C9215D900D40D47 /* DemoViewController.swift in Sources */,
 			);
@@ -638,10 +671,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = ElectricReel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = AndrewPalka.ElectricReel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ElectricReel-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -649,10 +689,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = ElectricReel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = AndrewPalka.ElectricReel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ElectricReel-Bridging-Header.h";
 			};
 			name = Release;
 		};

@@ -2,6 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Please allow Electric Reel to see your location in order to have the intended user experience</string>
+	<key>MGLMapboxAccessToken</key>
+	<string>pk.eyJ1IjoiYW5kcmV3bXBhbGthIiwiYSI6ImNpbHNodnl4aTAwMHl1MGtzNHBsbGs4ZnoifQ.NWTVTMuWmQ-On2fmjHIlHg</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>

@@ -235,7 +235,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="is2-kL-dB5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5288" y="772"/>
+            <point key="canvasLocation" x="6100" y="772"/>
         </scene>
         <!--Third View Controller-->
         <scene sceneID="kN9-N1-dlA">
@@ -246,36 +246,27 @@
                         <viewControllerLayoutGuide type="top" id="3Or-9N-RzY"/>
                         <viewControllerLayoutGuide type="bottom" id="4Sm-wD-OAU"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="BkS-hE-erP">
+                    <view key="view" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="BkS-hE-erP" customClass="MGLMapView">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="vzT-AC-Jsf">
-                                <rect key="frame" x="20" y="80" width="560" height="455"/>
-                            </mapView>
-                            <searchBar contentMode="redraw" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="huN-nu-CFU">
-                                <rect key="frame" x="20" y="80" width="560" height="44"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="gnO-JC-ANd"/>
-                                </constraints>
-                                <textInputTraits key="textInputTraits"/>
-                            </searchBar>
-                        </subviews>
-                        <color key="backgroundColor" red="0.33725490200000002" green="0.74901960779999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstItem="vzT-AC-Jsf" firstAttribute="leading" secondItem="BkS-hE-erP" secondAttribute="leadingMargin" id="O3q-AF-bi0"/>
-                            <constraint firstItem="vzT-AC-Jsf" firstAttribute="trailing" secondItem="BkS-hE-erP" secondAttribute="trailingMargin" id="Pdi-ZC-9fT"/>
-                            <constraint firstItem="4Sm-wD-OAU" firstAttribute="top" secondItem="vzT-AC-Jsf" secondAttribute="bottom" constant="16" id="el8-J0-axx"/>
-                            <constraint firstItem="huN-nu-CFU" firstAttribute="leading" secondItem="BkS-hE-erP" secondAttribute="leadingMargin" id="g3U-6E-VAA"/>
-                            <constraint firstItem="vzT-AC-Jsf" firstAttribute="top" secondItem="3Or-9N-RzY" secondAttribute="bottom" constant="16" id="lNX-Lx-MJo"/>
-                            <constraint firstItem="huN-nu-CFU" firstAttribute="top" secondItem="3Or-9N-RzY" secondAttribute="bottom" constant="16" id="ope-hV-lgP"/>
-                            <constraint firstItem="huN-nu-CFU" firstAttribute="trailing" secondItem="BkS-hE-erP" secondAttribute="trailingMargin" id="yCd-Z0-LvE"/>
-                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="latitude">
+                                <real key="value" value="45.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="zoomLevel">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="longitude">
+                                <real key="value" value="-121.7"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="showsUserLocation" value="NO"/>
+                            <userDefinedRuntimeAttribute type="string" keyPath="styleURL__" value="mapbox://styles/andrewmpalka/cilshngh0009ta7ltfu351fyr"/>
+                        </userDefinedRuntimeAttributes>
                     </view>
                     <navigationItem key="navigationItem" id="cuq-ef-1g0"/>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="3790" y="772"/>
+            <point key="canvasLocation" x="4602" y="772"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -290,7 +281,7 @@
                     <connections>
                         <segue destination="AMX-ff-XEL" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="2Dl-WQ-VhV" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
-                        <segue destination="iKB-Lj-XRv" kind="relationship" relationship="viewControllers" id="sc4-z2-6W0"/>
+                        <segue destination="gN4-Nn-yfH" kind="relationship" relationship="viewControllers" id="sc4-z2-6W0"/>
                         <segue destination="Nr5-Ac-VpD" kind="relationship" relationship="viewControllers" id="Fzu-j2-X3U"/>
                         <segue destination="eU2-PZ-Afu" kind="relationship" relationship="viewControllers" id="1K7-La-Uvq"/>
                     </connections>
@@ -336,7 +327,7 @@
             </objects>
             <point key="canvasLocation" x="-1757" y="772"/>
         </scene>
-        <!--Reel It!-->
+        <!--View Controller-->
         <scene sceneID="4e6-0g-7CK">
             <objects>
                 <viewController id="iKB-Lj-XRv" sceneMemberID="viewController">
@@ -347,14 +338,19 @@
                     <view key="view" contentMode="scaleToFill" id="j2j-EV-wv3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kt9-2Q-ZC5">
+                                <rect key="frame" x="180" y="163" width="240" height="0.0"/>
+                                <color key="backgroundColor" red="0.62352941179999999" green="0.71372549019999998" blue="0.83921568629999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.33725490200000002" green="0.74901960779999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Reel It!" id="g4S-re-3fJ"/>
                     <navigationItem key="navigationItem" id="wsS-kv-JUv"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Egp-TX-POc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2217" y="772"/>
+            <point key="canvasLocation" x="3029" y="772"/>
         </scene>
         <!--Favorites-->
         <scene sceneID="V9q-TM-YO0">
@@ -373,7 +369,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FqT-vu-cSa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4586" y="772"/>
+            <point key="canvasLocation" x="5398" y="772"/>
         </scene>
         <!--Map-->
         <scene sceneID="sEC-bp-GtT">
@@ -392,7 +388,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KMf-E7-I2J" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2978" y="772"/>
+            <point key="canvasLocation" x="3790" y="772"/>
         </scene>
         <!--Grid-->
         <scene sceneID="Zhr-95-9CE">
@@ -412,6 +408,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YnG-VH-doF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-195" y="772"/>
+        </scene>
+        <!--Reel It!-->
+        <scene sceneID="qn1-f8-KFF">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gN4-Nn-yfH" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Reel It!" id="g4S-re-3fJ"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="p09-Mt-kks">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="iKB-Lj-XRv" kind="relationship" relationship="rootViewController" id="q7I-sV-rY8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cwE-HY-9K6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2217" y="772"/>
         </scene>
     </scenes>
     <resources>
